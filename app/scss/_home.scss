@@ -137,7 +137,7 @@
 		left: 0;
 		right: 0;
 		background: #000;
-		opacity: 0.6;
+		opacity: 0.8;
 		// z-index: 50;
 	}
 	&-content {
@@ -146,5 +146,37 @@
 	&-img {
 		height: 500px;
 		width: 100%;
+	}
+	&_title {
+		font-size: 36px;
+		color: #fff;
+	}
+	.decoration {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	&_media {
+		font-size: 16px;
+		color: #f5f5f5;
+		text-transform: uppercase;
+		span {
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		&span,
+		:hover,
+		span.active {
+			color: $accent;
+		}
+	}
+	&_skill {
+		width: 555px !important;
+		color: #fff;
+		text-transform: uppercase;
+		width: auto;
+		&_content {
+			background: red;
+			width: 70%;
+		}
 	}
 }

@@ -29,7 +29,7 @@ $('.main_slider').owlCarousel({
 
 
 // tabs
-$('.product_media span').on('click', function () {
-    $('.product_media span').removeClass('active');
+$('.about_media span').on('click', function () {
+    $('.about_media span').removeClass('active');
     $(this).addClass('active');
 });
