@@ -173,10 +173,41 @@
 		width: 555px !important;
 		color: #fff;
 		text-transform: uppercase;
-		width: auto;
+		border: 1px solid $border;
 		&_content {
-			background: red;
+			height: 40px;
+			background: #9c5da5;
 			width: 70%;
 		}
+		.blue {
+			background: #11b0de;
+			width: 80%;
+		}
+		.desaturated_shade {
+			background: #d67f7f;
+			width: 60%;
+		}
+		.green {
+			background: #20bc9d;
+			width: 90%;
+		}
+		.brown {
+			background: #bb8a36;
+			width: 85%;
+		}
+	}
+	&_our_history {
+		color: #fff;
+		font-size: 14px;
+	}
+	&-check {
+		background: $accent;
+		height: 25px;
+		width: 25px;
+		border-radius: 50%;
+	}
+	&_our_history_text {
+		color: #fff;
+		font-size: 14px;
 	}
 }
