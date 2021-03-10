@@ -354,3 +354,44 @@
 		color: #fff;
 	}
 }
+// news
+.new {
+	&-title {
+		font-size: 36px;
+		color: #4e4e4e;
+		text-align: center;
+	}
+	&-content {
+		height: 300px;
+		width: 260px;
+		border: 1px solid $border;
+	}
+	&-img {
+		height: 230px;
+	}
+	&-block {
+		background: $accent;
+		height: 65px;
+		width: 65px;
+		font-size: 16px;
+		color: #fff;
+		text-align: center;
+	}
+	&-item {
+		font-size: 18px;
+		color: #717171;
+		&:hover {
+			color: $accent;
+		}
+	}
+	&-bottom {
+		font-size: 14px;
+		color: $text_secondary;
+		// position: relative;
+		// :after {
+		// 	content: "/";
+		// 	margin-left: 10px;
+		// 	margin-right: 10px;
+		// }
+	}
+}
