@@ -584,4 +584,184 @@
 			width: 100%;
 		}
 	}
+	&-carusel {
+		height: 80px;
+		width: 80px;
+		border-radius: 50%;
+		box-shadow: 0px 0px 10px 1px $accent;
+		img {
+			height: 100%;
+			width: 100%;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+	}
+	&-slider {
+		.owl-nav {
+			position: absolute;
+			top: 20px;
+			left: 0;
+			display: flex;
+			align-items: center;
+			z-index: 2;
+		}
+		.owl-next {
+			left: 800px;
+		}
+		.owl-prev {
+			left: 140px;
+		}
+		.owl-prev,
+		.owl-next {
+			height: 50px;
+			width: 50px;
+			// border-radius: 50%;
+			margin-left: 30px;
+			margin-bottom: 30px;
+			min-width: 0;
+			color: #fff !important;
+			border: 1px solid currentColor !important;
+			span {
+				color: currentColor;
+			}
+			:hover {
+				background: $accent;
+				color: #fff;
+				height: 50px;
+				width: 50px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: none !important;
+			}
+		}
+	}
+}
+// Team
+.team {
+	&-title {
+		color: #4e4e4e;
+		font-size: 36px;
+		text-align: center;
+	}
+	&-content {
+		width: 260px;
+		border: 1px solid #c7cfd3;
+	}
+	&-img {
+		height: 230px;
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	&-description {
+		background: #2e4a5b;
+		border-bottom: 2px solid #c7cfd3;
+	}
+	&-name {
+		font-size: 16px;
+		color: #fff;
+	}
+	&-position {
+		font-size: 14px;
+		color: $accent;
+	}
+	&-media {
+		background: #2e4a5b;
+	}
+	&-soc {
+		width: 25%;
+		border-right: 2px solid #c7cfd3;
+		text-align: center;
+		color: #fff;
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+// Block Design
+.block-design {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #000;
+		opacity: 0.7;
+		// z-index: 50;
+	}
+	&-title {
+		font-size: 50px;
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.color {
+		color: $accent;
+	}
+	&-top {
+		position: relative;
+	}
+	&-content {
+		width: 50%;
+	}
+	&-img {
+		height: 570px;
+		// width: 100%;
+	}
+	&-check {
+		background: $accent;
+		height: 25px;
+		width: 25px;
+		border-radius: 50%;
+	}
+	&-text {
+		font-size: 14px;
+		color: #f7f7f7;
+	}
+	&-btn {
+		background: $accent;
+		color: #fff;
+		height: 60px;
+		width: 160px;
+		:hover {
+			color: #fff;
+		}
+	}
+}
+// Keep In Touch
+.keep-touch {
+	&-map {
+		width: 50%;
+	}
+	&-content {
+		width: 50%;
+	}
+	&-title {
+		font-size: 36px;
+		color: #4e4e4e;
+	}
+	.line {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	&-input {
+		height: 50px;
+		width: 550px;
+		border: 1px solid $border;
+	}
+	&-textarea {
+		height: 180px;
+		width: 550px;
+		border: 1px solid $border;
+	}
+	&-button {
+		width: 550px;
+		background: $accent;
+	}
 }

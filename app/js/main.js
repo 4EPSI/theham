@@ -26,10 +26,22 @@ $('.main_slider').owlCarousel({
     // ]
 });
 
-
-
 // tabs
 $('.amazing-work-media span').on('click', function () {
     $('.amazing-work-media span').removeClass('active');
     $(this).addClass('active');
+});
+
+// main slider
+$('.worker-opinion-slider').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    dots: false,
+    mouseDrag: false,
+    items: 1,
+    // navText: [
+    //     '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+    //     '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+    // ]
 });
