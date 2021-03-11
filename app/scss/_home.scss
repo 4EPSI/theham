@@ -449,3 +449,139 @@
 		color: #25333c;
 	}
 }
+// Pricing Table
+.pricing-table {
+	&-title {
+		font-size: 36px;
+		color: #4e4e4e;
+		text-align: center;
+	}
+	&-content {
+		width: 25%;
+		border: 1px solid #e1e1e1;
+		border-radius: 5px;
+	}
+	&-block-bottom {
+		background: #f8fcfe;
+		width: 100%;
+		// height: 60px;
+		// text-align: center;
+		border-bottom: 1px solid #e1e1e1;
+		&-title {
+			font-size: 24px;
+			color: #717171;
+			text-transform: uppercase;
+		}
+		&-price {
+			background: #2e4a5b;
+			width: 100%;
+			// height: 100px;
+			border-bottom: 1px solid #e1e1e1;
+		}
+	}
+	&-scrip {
+		font-size: 40px;
+		color: #fff;
+	}
+	&-month {
+		font-size: 12px;
+	}
+	&-block-content {
+		background: #f8fcfe;
+		width: 100%;
+		text-align: center;
+	}
+	&-block-text {
+		border-bottom: 1px solid #e1e1e1;
+		font-size: 14px;
+		color: $text_secondary;
+	}
+	&-btn {
+		background: #2e4a5b;
+		height: 50px;
+		width: 170px;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	.title {
+		color: $accent;
+	}
+	.price-content {
+		background: $accent;
+		&:hover {
+			color: #fff;
+		}
+	}
+	// .offer {
+	// 	position: relative;
+	// 	:before {
+	// 		content: 'OFFER';
+	// 		position: absolute;
+	// 		top: 0;
+	// 		left: 240px;
+	// 		background: $accent;
+	// 		width: 30px;
+	// 		height: 60px;
+	// 		font-size: 14px;
+	// 		color: #fff;
+	// 	}
+	// }
+}
+// Workers Opinion
+.worker-opinion {
+	position: relative;
+	text-align: center;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #000;
+		opacity: 0.3;
+		// z-index: 50;
+	}
+	&-content {
+		position: relative;
+	}
+	&-title {
+		color: #fff;
+		font-size: 36px;
+		text-align: center;
+	}
+	&-quote {
+		color: $accent;
+		font-size: 36px;
+	}
+	&-text {
+		font-size: 16px;
+		color: #bbbbbb;
+	}
+	&-name {
+		font-size: 16px;
+		color: $accent;
+		text-transform: uppercase;
+	}
+	&-position {
+		font-size: 14px;
+		color: #bbbbbb;
+	}
+	&-img {
+		height: 150px;
+		width: 150px;
+		object-fit: cover;
+		// box-shadow: 0 0 8px 0 rgb(0, 0, 0, 0.3);
+		// box-shadow: 0px 0px 0px 2px rgb(255 255 255 / 0.5);
+		box-shadow: 0px 0px 26px 1px $accent;
+		border-radius: 50%;
+		border: 2px solid $accent;
+		img {
+			border-radius: 50%;
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
