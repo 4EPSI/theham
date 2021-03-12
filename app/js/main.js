@@ -45,3 +45,9 @@ $('.worker-opinion-slider').owlCarousel({
     //     '<i class="fa fa-angle-right" aria-hidden="true"></i>'
     // ]
 });
+
+// tabs
+$('.footer-tag span').on('click', function () {
+    $('.footer-tag span').removeClass('active');
+    $(this).addClass('active');
+});

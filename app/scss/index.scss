@@ -2,11 +2,10 @@
 @import "fonts";
 @import "libs";
 @import "general";
-@import "header";
-@import "footer";
-// @import "cta_block";
-// @import "prod_card";
 
 // Pages
+@import "header";
 @import "home";
+@import "footer";
+
 @import "media"; /* Always at the end*/

@@ -1,34 +1,102 @@
 // FOOTER
-.footer {
-    flex: 0 0 auto;
-    color: $text_light;
-    font-size: 14px;
-    background: #f8f8f8;
-    &_logo {
-        height: 40px;
-    }
-    &_title {
-        text-transform: uppercase;
-        color: $text;
-        font-size: 16px;
-    }
+// .footer {
+//     flex: 0 0 auto;
+//     color: $text_light;
+//     font-size: 14px;
+//     background: #f8f8f8;
+//     &_logo {
+//         height: 40px;
+//     }
+//     &_title {
+//         text-transform: uppercase;
+//         color: $text;
+//         font-size: 16px;
+//     }
 
-    &_list {
-        a {
-            &:hover {
-                color: $accent;
-            }
-        }
-    }
-    span {
-        color: $text;
-    }
-    &_copyright {
-        background: #fff;
-        &_text {
-            color: $text_light;
-            font-size: 12px;
-        }
-    }
+//     &_list {
+//         a {
+//             &:hover {
+//                 color: $accent;
+//             }
+//         }
+//     }
+//     span {
+//         color: $text;
+//     }
+//     &_copyright {
+//         background: #fff;
+//         &_text {
+//             color: $text_light;
+//             font-size: 12px;
+//         }
+//     }
+// }
+// theHam basement
+.footer {
+	background: #1c2b33;
+	&-firm {
+		font-size: 40px;
+		color: #fff;
+	}
+	.color {
+		color: $accent;
+	}
+	&-text {
+		font-size: 14px;
+		color: #b2b2b2;
+	}
+	&-title {
+		font-size: 18px;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+	&-img {
+		height: 100px;
+		width: 200px;
+		// img {
+		// 	height: 100%;
+		// 	width: 100%;
+		// }
+	}
+	&-post {
+		font-size: 16px;
+		color: #ffffff;
+		text-transform: uppercase;
+		&:hover {
+			color: $accent;
+		}
+	}
+	&-data {
+		font-size: 14px;
+		color: #f1f1f1;
+	}
+	&-recent {
+		border-bottom: 1px solid #294453;
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+	&-tag {
+		color: #b8b8b8;
+		font-size: 14px;
+		height: 40px;
+		width: 70px;
+		border: 1px solid #acacac;
+		span {
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		&span,
+		:hover,
+		span.active {
+			color: #fff;
+			background: $accent;
+			height: 100%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 }
 

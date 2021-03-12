@@ -1,6 +1,5 @@
 // MAIN
 .main {
-	height: 100vh;
 	// text-align: center;
 	&_clause {
 		font-size: 36px;
@@ -35,24 +34,18 @@
 		background: #00cbf6;
 	}
 	&_slider {
-		.owl-nav {
-			position: absolute;
-			top: 100px;
-			left: 0;
-			display: flex;
-			align-items: center;
-			z-index: 2;
+		.slider_item {
+			height: calc(100vh - 120px);
 		}
-		.owl-next {
-			left: 900px;
-		}
+
 		.owl-prev,
 		.owl-next {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
 			height: 50px;
 			width: 50px;
 			border-radius: 50%;
-			margin-left: 30px;
-			margin-bottom: 30px;
 			min-width: 0;
 			color: #fff !important;
 			border: 1px solid currentColor !important;
@@ -60,8 +53,19 @@
 				color: currentColor;
 			}
 		}
+		.owl-prev {
+			left: 15px;
+		}
+		.owl-next {
+			right: 15px;
+		}
 	}
 }
+// Top section
+.top-section {
+	max-height: 100vh;
+}
+
 // block
 .block {
 	&_content {
@@ -139,6 +143,9 @@
 		background: #000;
 		opacity: 0.8;
 		// z-index: 50;
+	}
+	&-item {
+		position: relative;
 	}
 	&-content {
 		position: relative;
@@ -684,6 +691,7 @@
 // Block Design
 .block-design {
 	position: relative;
+	height: auto;
 	&:before {
 		content: "";
 		position: absolute;
