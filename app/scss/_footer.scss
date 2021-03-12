@@ -83,3 +83,15 @@
 		width: 75px;
 	}
 }
+// copyrights
+.copyrights {
+	background: #22353f;
+	min-height: 50px;
+	&-text {
+		font-size: 14px;
+		color: #aeaeae;
+	}
+	.color {
+		color: $accent;
+	}
+}

@@ -97,19 +97,19 @@ button, .btn {
 .animate {
 	transition: all 0.3s ease-out;
 }
-.no_scroll {
-	overflow: hidden;
-	&:after {
-		content: '';
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: rgba(0, 0, 0, 0.6);
-		z-index: 1;
-	}
-}
+// .no_scroll {
+// 	overflow: hidden;
+// 	&:after {
+// 		content: '';
+// 		position: fixed;
+// 		top: 0;
+// 		bottom: 0;
+// 		left: 0;
+// 		right: 0;
+// 		background: rgba(0, 0, 0, 0.6);
+// 		z-index: 1;
+// 	}
+// }
 .hidden {
 	display: none !important;
 }

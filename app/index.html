@@ -31,24 +31,30 @@
 	<header class="header">
 	<div class="container">
 		<div class="header_content d-flex justify-content-between">
-			<div class="header_logo">
-				<a href="#"><img src="img/logo.png" alt="logo"></a>
+			<div class="header_logo d-flex">
+				<a class="d-flex align-items-center" href="#"><img src="img/hth.png" alt="logo"><div class="header_logo_the">the<span class="header_logo_the color_logo">Ham</span></div></a>
 			</div>
-			<div class="header_menu_content">
-				<a class="header_menu" href="#">home</a>
-				<a class="header_menu" href="#">about</a>
-				<a class="header_menu" href="#">skills</a>
-				<a class="header_menu" href="#">service</a>
-				<a class="header_menu" href="#">work</a>
-				<a class="header_menu" href="#">testimonial</a>
-				<a class="header_menu" href="#">blog</a>
-				<a class="header_menu" href="#">team</a>
-				<a class="header_menu" href="#">contact</a>
+			<div class="header_menu">
+				<a class="header_item go_to" href="#home">home</a>
+				<a class="header_item go_to" href="#about">about</a>
+				<a class="header_item go_to" href="#skills">skills</a>
+				<a class="header_item go_to" href="#service">service</a>
+				<a class="header_item go_to" href="#work">work</a>
+				<a class="header_item go_to" href="#testimonial">testimonial</a>
+				<a class="header_item go_to" href="#blog">blog</a>
+				<a class="header_item go_to" href="#team">team</a>
+				<a class="header_item go_to" href="#contact">contact</a>
 			</div>
 			<div class="header_search">
 				<button type="submit" class="header_btn">
 					<a href="#"><i class="fas fa-search"></i></a>
 				</button>
+			</div>
+			<div class="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
 		</div>
 	</div>
@@ -57,7 +63,7 @@
 
 	<main class="main">
 		<!-- main -->
-<div class="top-section  d-flex align-items-center" >
+<div id="home" class="top-section  d-flex align-items-center" >
 		<div class="owl-carousel  owl-theme main_slider">
 			<div class="slider_item d-flex align-items-center justify-content-center img_cover" style="background-image: url(img/wallpaper.jpg);">
 				<div class="main_content">
@@ -127,7 +133,7 @@
 </div>
 
 <!-- Creative -->
-<div class="container">
+<div id="blog" class="container">
 	<h2 class="creative_item mb-4">Creative Amazing Features</h2>
 	<div class="decoration mb-5">
 		<div class="decoration_line"></div>
@@ -254,7 +260,7 @@
 </div>
 
 <!-- About  -->
-<div class="about img_cover d-flex flex-column justify-content-center mb-4" style="background-image: url(img/about_3.jpg);">
+<div id="about" class="about img_cover d-flex flex-column justify-content-center mb-4" style="background-image: url(img/about_3.jpg);">
 	<div class="row">
 		<div class="col-6">
 			<div class="about-img d-flex justify-content-center">
@@ -272,7 +278,7 @@
 			<div class="nav d-flex mb-5">
 				<a class="about-media mr-md-3  mr-1 active tab" href="#our_history" data-toggle="tab" aria-expanded="false">our History</a>
 				<a class="about-media mr-md-3  mr-1 tab" href="#our_biography" data-toggle="tab" aria-expanded="false">our Biography</a>
-				<a class="about-media mr-md-3  mr-1 tab" href="#our_skills" data-toggle="tab" aria-expanded="false">our Skills</a>
+				<a id="skills" class="about-media mr-md-3  mr-1 tab" href="#our_skills" data-toggle="tab" aria-expanded="false">our Skills</a>
 			</div>
 			<div class="tab-content">
 				<div class="tab-pane tab_content  fade show active" id="our_history">
@@ -361,7 +367,7 @@
 	</div>
 </div>
 <!--Amazing Work -->
-<div class="amazing-work mb-5">
+<div id="work" class="amazing-work mb-5">
 	<div class="container">
 		<h2 class="amazing-work-title mb-3">Our Amazing Work</h2>
 		<div class="decoration mb-5">
@@ -437,7 +443,7 @@
 </div>
 
 <!-- Our Services -->
-<div class="services mb-5">
+<div id="service" class="services mb-5">
 	<div class="container">
 		<h2 class="amazing-work-title">Our Services</h2>
 		<div class="decoration mb-5">
@@ -523,7 +529,7 @@
 </div>
 
 <!-- News -->
-<div class="new mb-5">
+<div id="testimonial" class="new mb-5">
 	<div class="container">
 		<h2 class="new-title">Breaking News</h2>
 		<div class="decoration mb-5">
@@ -901,7 +907,7 @@
 	</div>
 </div>
 <!-- Team -->
-<div class="team mb-5 pt-5 pb-5">
+<div id="team" class="team mb-5 pt-5 pb-5">
 	<div class="container">
 		<h3 class="team-title">Meet Our Team</h3>
 		<div class="decoration mb-5">
@@ -1061,7 +1067,7 @@
 	</div>
 </div>
 <!-- Keep In Touch -->
-<div class="keep-touch d-flex pt-5 pb-5">
+<div  class="keep-touch d-flex pt-5 pb-5">
 	<div class="keep-touch-map">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13027.971350151915!2d149.12044458463998!3d-35.28130433462976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164d69b05c9021%3A0x500ea6ea7695660!2z0JrQsNC90LHQtdGA0YDQsCDQkNCy0YHRgtGA0LDQu9C40LnRgdC60LDRjyDRgdGC0L7Qu9C40YfQvdCw0Y8g0YLQtdGALiAyNjAxLCDQkNCy0YHRgtGA0LDQu9C40Y8!5e0!3m2!1sru!2sua!4v1615482688195!5m2!1sru!2sua" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	</div>
@@ -1098,7 +1104,7 @@
 	<footer class="footer pt-5">
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div id="contact" class="col-3">
                 <div class="footer-firm mb-4">the<span class="footer-firm color">Ham</span></div>
                 <div class="footer-text mb-5">Lorem ipsum dolor sit amet, con is sectetur adipiscing elit. Duis ut lob ortis nulla. Vestibulum ante ipsum primis itrices posuere cubilia.</div>
                 <div class="footer-text mb-4">Office :	<a class="footer-text" href="https://goo.gl/maps/yDpX4iVqaebyyuLD9" target="_blank">795 Folsom Ave, Suite 600 San Francisco, CA 94107</a></div>
@@ -1217,6 +1223,9 @@
         </div>
     </div>
 </footer>
+<div class="copyrights d-flex justify-content-center align-items-center">
+    <div class="copyrights-text d-flex">Copyright 2015 <span class="copyrights-text color d-flex">theHam<div class="copyrights-text" data-="">| All Rights Reserved</div></span></div>
+</div>
 
 	<script src="libs/jquery/jquery.min.js"></script>
 	<script src="libs/bootstrap/js/popper.js"></script>

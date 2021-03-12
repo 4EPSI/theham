@@ -1,19 +1,32 @@
 // HEADER
 .header {
-	background: #44433e;
-	height: 120px;
+	// background: #44433e;
+	// height: 120px;
 	display: flex;
 	align-items: center;
+	position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+	z-index: 2;
 	&_content {
 		display: flex;
 		align-items: center;
 	}
-	// &_logo {
-	// 	width: 30%;
-	// }
-	&_menu {
+	&_logo {
+		width: 200px;
+		height: 70px;
+		&_the {
+			font-size: 32px;
+			color: #ffffff;
+			.color_logo {
+				color: $accent;
+			}
+		}
+	}
+	&_item {
 		font-size: 14px;
-		color: #b8b8b8;
+		color: #fff;
 		margin-right: 15px;
 		&:hover {
 			color: #18cfab;
@@ -30,3 +43,187 @@
 		border: none;
 	}
 }
+.header.active .header_logo {
+    filter: invert(1);
+}
+.header.active .burger {
+    filter: invert(1);
+}
+.header.active .header_content_user {
+    filter: invert(1);
+}
+.burger {
+	height: 25px;
+	width: 30px;
+	position: relative;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+    z-index: 1;
+	span {
+		display: block;
+		position: absolute;
+		height: 4px;
+		width: 100%;
+		background: #333;
+		border-radius: 4px;
+		opacity: 1;
+		left: 0;
+		transition: .25s ease-in-out;
+		&:nth-child(1) {
+  			top: 0px;
+		}
+		&:nth-child(2),
+		&:nth-child(3) {
+			top: 10px;
+		}
+		&:nth-child(4) {
+			top: 20px;
+		}
+	}
+	&.active {
+		span {
+			&:nth-child(1) {
+				top: 10px;
+				width: 0%;
+				left: 50%;
+			}
+			&:nth-child(2) {
+				transform: rotate(45deg);
+			}
+			&:nth-child(3) {
+				transform: rotate(-45deg);
+			}
+			&:nth-child(4) {
+				top: 10px;
+				width: 0%;
+				left: 50%;
+			}
+		}
+	}
+}
+.burger {
+    display: none;
+    height: 25px;
+    width: 30px;
+    position: relative;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+    span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #333;
+        border-radius: 4px;
+        opacity: 1;
+        left: 0;
+        transition: .25s ease-in-out;
+        &:nth-child(1) {
+            top: 0px;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+            top: 10px;
+        }
+        &:nth-child(4) {
+            top: 20px;
+        }
+    }
+    &.active {
+        span {
+            &:nth-child(1) {
+                top: 10px;
+                width: 0%;
+                left: 50%;
+            }
+            &:nth-child(2) {
+                transform: rotate(45deg);
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+            &:nth-child(4) {
+                top: 10px;
+                width: 0%;
+                left: 50%;
+            }
+        }
+    }
+}
+// .menu_mob  {
+// 	display: none;
+// 	background: #fff;
+// 	position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+// 	z-index: 2;
+// 	height: 100vh;
+// 	overflow: auto;
+// }
+// .burger {
+//     height: 25px;
+//     width: 30px;
+//     position: relative;
+//     transition: 0.5s ease-in-out;
+//     cursor: pointer;
+//     z-index: 1;
+//     display: none;
+//   }
+//   .burger span {
+//     position: absolute;
+//     height: 4px;
+//     width: 100%;
+//     background: #fff;
+//     border-radius: 4px;
+//     opacity: 1;
+//     left: 0;
+//     transition: 0.25s ease-in-out;
+//   }
+//   .burger span:nth-child(1) {
+//     top: 0;
+//   }
+//   .burger span:nth-child(2),
+//   .burger span:nth-child(3) {
+//     top: 10px;
+//   }
+//   .burger span:nth-child(4) {
+//     top: 20px;
+//   }
+//   .burger span:nth-child(5) {
+//     top: 10px;
+//   }
+//   .burger span:nth-child(6) {
+//     top: 10px;
+//   }
+
+//   .burger span:nth-child(7) {
+//     top: 10px;
+//   }
+
+//   .burger.active span:nth-child(1) {
+//     top: 10px;
+//     width: 0%;
+//     left: 50%;
+//   }
+//   .burger.active span:nth-child(2) {
+//     transform: rotate(45deg);
+//   }
+//   .burger.active span:nth-child(3) {
+//     transform: rotate(-45deg);
+//   }
+//   .burger.active span:nth-child(4) {
+//     top: 10px;
+//     width: 0%;
+//     left: 50%;
+//   }
+//   .burger.active span:nth-child(5) {
+//     transform: rotate(-45deg);
+//   }
+//   .burger.active span:nth-child(6) {
+//     transform: rotate(-45deg);
+//   }
+//   .burger.active span:nth-child(7) {
+//     transform: rotate(-45deg);
+//   }
