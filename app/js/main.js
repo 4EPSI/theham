@@ -39,11 +39,18 @@ $('.worker-opinion-slider').owlCarousel({
     nav: true,
     dots: false,
     mouseDrag: false,
-    items: 1,
-    // navText: [
-    //     '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-    //     '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-    // ]
+    // items: 1,
+    responsive : {
+        0: {
+            items: 1
+        },
+        560: {
+            items: 2
+        },
+        768: {
+            items: 4
+        }
+    }
 });
 
 // tabs
