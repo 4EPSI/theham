@@ -230,6 +230,23 @@
 	&-tab {
 		text-align: center;
 	}
+	&-text {
+		color: $accent;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+	&-position {
+		font-size: 12px;
+		color: #8a8a8a;
+	}
+	&-link {
+		background: #fff;
+		color: $accent;
+		height: 40px;
+		width: 40px;
+		border-radius: 100%;
+		border: 1px solid $accent;
+	}
 	&-media {
 		border: 1px solid $border;
 		border-right: none;
@@ -240,7 +257,7 @@
 			cursor: pointer;
 			transition: all 0.3s ease;
 			font-size: 14px;
-			color: #fff;
+			color: #717171;
 		}
 		&span,
 		:hover,
@@ -266,6 +283,10 @@
 	// 		width: 290px;
 	// 	}
 	// }
+	&-img-content {
+		// border: 2px solid transparent;
+		border: 1px solid $border;
+	}
 	&-img {
 		width: 25%;
 		height: 210px;
@@ -279,6 +300,21 @@
 	}
 	&-btn {
 		font-size: 14px;
+	}
+	&-block {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #fff;
+		transition: all 0.3s ease;
+		opacity: 0;
+		&:hover {
+			opacity: 1;
+			// border-top:3px solid $accent;
+			// border: 2px solid currentColor;
+		}
 	}
 }
 // Our Services
@@ -666,6 +702,42 @@
 			width: 100%;
 			object-fit: cover;
 		}
+	}
+	&-add-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 136px;
+		background: #fff;
+		transition: all 0.3s ease;
+		opacity: 0;
+		&:hover {
+			opacity: 1;
+			// border-top:3px solid $accent;
+			// border: 2px solid currentColor;
+		}
+	}
+	&-plus {
+		// font-size: 30px;
+		// background: #d3cece;
+		// height: 100px;
+		// width: 100px;
+		// border-radius: 100%;
+		// border: 1px solid;
+		// color: $accent;
+		color: #fff;
+		font-size: 25px;
+		background: #18cfab;
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;
+	}
+	&-add-content {
+		width: 150px;
+		height: 150px;
+		border-radius: 100%;
+		border: 1px solid $accent;
 	}
 	&-description {
 		background: #2e4a5b;
