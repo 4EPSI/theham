@@ -172,6 +172,18 @@
     //     opacity: 1;
     //     visibility: visible;
     // }
+    .main_text {
+        max-width: 250px;
+        margin: auto;
+    }
+    .main_slider .owl-next,
+    .main_slider .owl-prev {
+        height: 30px;
+        width: 30px;
+    }
+    .about-media {
+        font-size: 14px;
+    }
     .header_logo_the,
     .header_btn {
         color: black;
@@ -233,6 +245,10 @@
     }
     .amazing-work-media {
         padding: 10px !important;
+        text-align: center;
+        line-height: 12px;
+        display: flex;
+        align-items: center;
     }
     .amazing-work-media span {
         font-size: 10px;
@@ -293,7 +309,7 @@
     }
     .block-design-content {
         width: 100%;
-        padding: 10px;
+        // padding: 10px;
     }
     .block-design-img {
         height: auto;

@@ -28,8 +28,12 @@
 		font-size: 14px;
 		color: #fff;
 		margin-right: 15px;
+		text-transform: uppercase;
+		border-bottom: 2px solid transparent;
+		padding-bottom: 10px;
 		&:hover {
 			color: #18cfab;
+			border-bottom: 2px solid currentColor;
 		}
 		// &_content {
 		// 	width: 60%;

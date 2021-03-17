@@ -1,6 +1,7 @@
 // MAIN
 .main {
 	// text-align: center;
+	overflow: hidden;
 	&_clause {
 		font-size: 36px;
 		color: #fff;
@@ -26,12 +27,19 @@
 		color: #fff;
 		background: $accent;
 		text-transform: uppercase;
+		border: 1px solid transparent;
 		&:hover {
-			color: #fff;
+			background: #fff;
+			color: $accent;
+			border: 1px solid currentColor;
 		}
 	}
 	.btn_color {
 		background: #00cbf6;
+		&:hover {
+			background: #fff;
+			color: $accent;
+		}
 	}
 	&_slider {
 		.slider_item {
@@ -379,6 +387,7 @@
 	&-title {
 		color: $accent;
 		font-size: 40px;
+		text-transform: uppercase;
 	}
 	&-content {
 		z-index: 1;
