@@ -566,14 +566,27 @@
 		text-align: center;
 		color: #fff;
 		text-transform: uppercase;
+		border: 1px solid transparent;
+		&:hover {
+			background: #fff;
+			color: $accent;
+			border: 1px solid currentColor;
+		}
 	}
 	.title {
 		color: $accent;
 	}
 	.price-content {
 		background: $accent;
+		border: 1px solid transparent;
+	}
+	.accent-btn {
+		background: $accent;
+		border: 1px solid transparent;
 		&:hover {
-			color: #fff;
+			background: #fff;
+			color: $accent;
+			border: 1px solid currentColor;
 		}
 	}
 	// .offer {
@@ -822,8 +835,11 @@
 		color: #fff;
 		height: 60px;
 		width: 160px;
-		:hover {
-			color: #fff;
+		border: 1px solid transparent;
+		&:hover {
+			background: #fff;
+			color: $accent;
+			border: 1px solid currentColor;
 		}
 	}
 }

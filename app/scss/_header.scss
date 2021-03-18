@@ -43,8 +43,21 @@
 	// 	width: 30%;
 	// }
 	&_btn {
-		background: none;
+		opacity: 1;
 		border: none;
+	}
+	&_btn.active {
+		// background: none;
+		// border: none;
+		// &:hover {
+		// 	background: #fff;
+		// }
+		opacity: 0;
+        visibility: hidden;
+	}
+	&-icon-search {
+		color: #fff;
+		display: block;
 	}
 }
 .header.active .header_logo {
