@@ -12,6 +12,7 @@
 	&_content {
 		display: flex;
 		align-items: center;
+		position: relative;
 	}
 	&_logo {
 		width: 200px;
@@ -39,21 +40,23 @@
 		// 	width: 60%;
 		// }
 	}
-	// &_search {
-	// 	width: 30%;
-	// }
-	&_btn {
-		opacity: 1;
-		border: none;
+	&_search {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
 	}
-	&_btn.active {
-		// background: none;
-		// border: none;
-		// &:hover {
-		// 	background: #fff;
-		// }
+	&_input {
+		width: 400px;
 		opacity: 0;
-        visibility: hidden;
+		visibility: hidden;
+		border: none;
+		transition: all 0.2s ease;
+		border-radius: 3px;
+	}
+	&_input.active {
+		opacity: 1;
+        visibility: visible;
 	}
 	&-icon-search {
 		color: #fff;

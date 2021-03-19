@@ -14,18 +14,14 @@ $(document).on('click', function (e) {
 });
 // Search
 $('.header-icon-search').on('click', function () {
-    $('.header-icon-search').toggleClass('active');
-    $('body').toggleClass('no_scroll');
-    $('.header_btn').toggleClass('active');
+    $('.header_input').toggleClass('active');
 });
-// $(document).on('click', function (e) {
-//     if (!$(e.target).closest('.header').length) {
-//         $('.header-icon-search').removeClass('active');
-//         $('.header_btn').removeClass('active');
-//         $('body').removeClass('no_scroll');
-//     }
-//     e.stopPropagation();
-// });
+$(document).on('click', function (e) {
+    if (!$(e.target).closest('.header_search').length) {
+        $('.header_input').removeClass('active');
+    }
+    e.stopPropagation();
+});
 // main slider
 $('.main_slider').owlCarousel({
     loop: true,
